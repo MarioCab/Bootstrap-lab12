@@ -16,6 +16,7 @@
       crossorigin="anonymous"
     />
     <link href="sticky-footer-navbar.css" rel="stylesheet" />
+    <link href="pricing.css" rel="stylesheet" />
   </head>
 
   <body>
@@ -57,38 +58,87 @@
     </nav>
 
     <main>
-      <h2>Shop at Pacific Trails</h2>
-      <img src="images/trailguide.jpg" alt="Pacific Trails Hiking Guide" />
-      <h3>Pacific Trails Hiking Guide</h3>
-      <p>
-        Guided hikes to the best trails around Pacific Trails Resort. Each hike
-        includes a detailed route, distance, elevation change, estimated time,
-        and other valuable trail information. 187 pages. Softcover. $19.95
-      </p>
-      <form method="post" action="http://webdevbasics.net/cart.html">
-        <input type="submit" value="Add to Cart" />
-      </form>
-      <img src="images/yurtyoga.jpg" alt="Pacific Trails Yurt Yoga" />
-      <h3>Yurt Yoga</h3>
-      <p>
-        Enjoy the restorative poses of yurt yoga in the comfort of your own
-        home. Each pose is illustrated with several photographs, an explanation,
-        and a description of the restorative benefits. Softcover. $24.95
-      </p>
-      <form method="post" action="http://webdevbasics.net/cart.html">
-        <input type="submit" value="Add to Cart" />
-      </form>
-      <img src="images/yurtcamping.jpg" alt="Yurt Camping" class="leftfloat" />
-      <h3>Yurt Camping</h3>
-      <p>
-        The ultimate guide to a relaxing camping vacation in a yurt with
-        children and pets. Once you discover the bliss of camping in a yurt, you
-        will never want to spend your vacation any other way. 75 pages.
-        Softcover. $15.95
-      </p>
-      <form method="post" action="http://webdevbasics.net/cart.html">
-        <input type="submit" value="Add to Cart" />
-      </form>
+      <h1>Shop at Pacific Trails</h1>
+      <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm">
+            <div class="card-header py-3">
+              <h2 class="my-0 fw-normal">Pacific Trails Hiking Guide</h2>
+            </div>
+            <div class card-body>
+              <h1 class="card-title pricing-card-title">$19.95</h1>
+              <img
+                src="images/trailguide.jpg"
+                alt="Pacific Trails Hiking Guide"
+              />
+              <p>
+                Guided hikes to the best trails around Pacific Trails Resort.
+                Each hike includes a detailed route, distance, elevation change,
+                estimated time, and other valuable trail information.<br />187
+                pages.<br />Softcover.
+              </p>
+              <form method="post" action="http://webdevbasics.net/cart.html">
+                <button
+                  type="submit"
+                  class="w-100 btn btn-lg btn-outline-primary"
+                >
+                  Add to Cart
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm">
+            <div class="card-header py-3">
+              <h2 class="my-0 fw-normal">Yurt Yoga</h2>
+            </div>
+            <div class card-body>
+              <h1 class="card-title pricing-card-title">$24.95</h1>
+              <img src="images/yurtyoga.jpg" alt="Pacific Trails Yurt Yoga" />
+              <p>
+                Enjoy the restorative poses of yurt yoga in the comfort of your
+                own home. Each pose is illustrated with several photographs, an
+                explanation, and a description of the restorative benefits.<br />206
+                pages.<br />Softcover.
+              </p>
+              <form method="post" action="http://webdevbasics.net/cart.html">
+                <button
+                  type="submit"
+                  class="w-100 btn btn-lg btn-outline-primary"
+                >
+                  Add to Cart
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm">
+            <div class="card-header py-3">
+              <h2 class="my-0 fw-normal">Yurt Camping</h2>
+            </div>
+            <div class card-body>
+              <h1 class="card-title pricing-card-title">$15.95</h1>
+              <img src="images/yurtcamping.jpg" alt="Yurt Camping" />
+              <p>
+                The ultimate guide to a relaxing camping vacation in a yurt with
+                children and pets. Once you discover the bliss of camping in a
+                yurt, you will never want to spend your vacation any other
+                way.<br />75 pages.<br />Softcover.
+              </p>
+              <form method="post" action="http://webdevbasics.net/cart.html">
+                <button
+                  type="submit"
+                  class="w-100 btn btn-lg btn-outline-primary"
+                >
+                  Add to Cart
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
     <footer>
       Copyright &copy; 2024 Pacific Trails Resort<br />
